@@ -16,7 +16,11 @@ public class FirstServlet extends HttpServlet  {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		PrintWriter writer = resp.getWriter();
-		writer.write("Primeiro Servlet ;)");
+		writer.write("<html>");
+		writer.write("<body>");
+		writer.write("<h1>Primeiro Servlet ;)</h1>");
+		writer.write("</body>");
+		writer.write("</html>");
 	}
 
 
